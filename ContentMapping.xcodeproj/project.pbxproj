@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D1D18F76256F2E7400A33244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D18F75256F2E7400A33244 /* AppDelegate.swift */; };
-		D1D18F78256F2E7400A33244 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D18F77256F2E7400A33244 /* SceneDelegate.swift */; };
 		D1D18F7A256F2E7400A33244 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D18F79256F2E7400A33244 /* ViewController.swift */; };
-		D1D18F7D256F2E7400A33244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D18F7B256F2E7400A33244 /* Main.storyboard */; };
 		D1D18F7F256F2E7500A33244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1D18F7E256F2E7500A33244 /* Assets.xcassets */; };
 		D1D18F82256F2E7500A33244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D18F80256F2E7500A33244 /* LaunchScreen.storyboard */; };
+		D1D18F91256F2EF500A33244 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D18F90256F2EF500A33244 /* Document.swift */; };
+		D1D18F95256F2F1C00A33244 /* TableOfContentsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D18F94256F2F1C00A33244 /* TableOfContentsMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D1D18F72256F2E7400A33244 /* ContentMapping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContentMapping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D18F75256F2E7400A33244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D1D18F77256F2E7400A33244 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D1D18F79256F2E7400A33244 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D1D18F7C256F2E7400A33244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1D18F7E256F2E7500A33244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1D18F81256F2E7500A33244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1D18F83256F2E7500A33244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1D18F90256F2EF500A33244 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		D1D18F94256F2F1C00A33244 /* TableOfContentsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableOfContentsMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +57,22 @@
 			isa = PBXGroup;
 			children = (
 				D1D18F75256F2E7400A33244 /* AppDelegate.swift */,
-				D1D18F77256F2E7400A33244 /* SceneDelegate.swift */,
+				D1D18F8A256F2E7900A33244 /* Resources */,
 				D1D18F79256F2E7400A33244 /* ViewController.swift */,
-				D1D18F7B256F2E7400A33244 /* Main.storyboard */,
+				D1D18F90256F2EF500A33244 /* Document.swift */,
+				D1D18F94256F2F1C00A33244 /* TableOfContentsMapper.swift */,
+			);
+			path = ContentMapping;
+			sourceTree = "<group>";
+		};
+		D1D18F8A256F2E7900A33244 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				D1D18F7E256F2E7500A33244 /* Assets.xcassets */,
 				D1D18F80256F2E7500A33244 /* LaunchScreen.storyboard */,
 				D1D18F83256F2E7500A33244 /* Info.plist */,
 			);
-			path = ContentMapping;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +134,6 @@
 			files = (
 				D1D18F82256F2E7500A33244 /* LaunchScreen.storyboard in Resources */,
 				D1D18F7F256F2E7500A33244 /* Assets.xcassets in Resources */,
-				D1D18F7D256F2E7400A33244 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +144,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D18F91256F2EF500A33244 /* Document.swift in Sources */,
 				D1D18F7A256F2E7400A33244 /* ViewController.swift in Sources */,
+				D1D18F95256F2F1C00A33244 /* TableOfContentsMapper.swift in Sources */,
 				D1D18F76256F2E7400A33244 /* AppDelegate.swift in Sources */,
-				D1D18F78256F2E7400A33244 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D1D18F7B256F2E7400A33244 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D1D18F7C256F2E7400A33244 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D1D18F80256F2E7500A33244 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +288,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6V4EX2JJHV;
-				INFOPLIST_FILE = ContentMapping/Info.plist;
+				INFOPLIST_FILE = ContentMapping/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.kevinh.ContentMapping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +308,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6V4EX2JJHV;
-				INFOPLIST_FILE = ContentMapping/Info.plist;
+				INFOPLIST_FILE = ContentMapping/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.kevinh.ContentMapping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
